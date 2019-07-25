@@ -1,0 +1,3 @@
+FROM {{ env "DOCKER_REGISTRY" }}/cobalt/alpine35-nginx121:{{ env "BASE_IMAGE_VERSION" }}
+
+ENV REAL_IP_ENABLED true

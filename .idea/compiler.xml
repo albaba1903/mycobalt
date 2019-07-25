@@ -6,8 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cobalt" />
+        <module name="task1" />
+        <module name="util" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="task2" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cobalt" options="" />
+      <module name="task1" options="-parameters" />
+      <module name="task2" options="-parameters" />
+      <module name="util" options="-parameters" />
+    </option>
   </component>
 </project>

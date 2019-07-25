@@ -1,0 +1,3 @@
+pushd cobalt
+deploy
+popd
